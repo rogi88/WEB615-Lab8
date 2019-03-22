@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Articles", type: :request do
-  before(:each) do
+  before(:each) do #This logins the user
     @user = FactoryBot.create(:user) # Create the user
 
     # Set up the basic premise of the test by making sure that you have to log in
